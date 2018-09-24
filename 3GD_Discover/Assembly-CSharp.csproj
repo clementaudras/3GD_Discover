@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectGuid>{D8850810-62D2-E50C-6B68-A3628F107E75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_6;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_POST_PROCESSING_STACK_V2;FIRST_PERSON_CONTROLLER;ULTIMATE_CHARACTER_CONTROLLER_SHOOTER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2018.2.6f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Code\Grappling_Right.cs" />
+    <Compile Include="Assets\Code\MoveToward.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\DamageZone.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\DemoManager.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\DemoZoneTrigger.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\DoorOpener.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\GameObjectDisabler.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\HeadshotIndicator.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\InteractRoomReset.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\MovementTypeSwitcher.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\Objects\Door.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\Objects\Teleporter.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\Objects\Turret.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\PerspectiveSwitchZone.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\RideDisabler.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\TimeAdjuster.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\TriggerAdjustor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\UI\CharacterStatusMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\UI\FirstPersonSpringZone.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\UI\MouseSmoothingZone.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\UI\ToggleControlHelp.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Scripts\UI\UIZone.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Camera\Combat.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Camera\FirstPerson.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Camera\FreeLook.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Camera\TransformLook.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Character\Abilities\Lean.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Character\FirstPersonObjects.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Character\Identifiers\FirstPersonBaseObject.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Character\Identifiers\FirstPersonObjectPivot.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Character\MovementTypes\Combat.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Character\MovementTypes\FreeLook.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Items\FirstPersonGrenadeItemProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Items\FirstPersonItemProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Items\FirstPersonPerspectiveItem.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Items\FirstPersonShootableWeaponProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Items\FirstPersonThrowableItemProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\Items\FirstPersonWeaponProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Scripts\StateSystem\AOTLinker.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Audio\AudioClipSet.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Camera\AimAssist.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Camera\AimAssistHandler.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Camera\AimAssistOffset.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Camera\CameraController.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Camera\CameraControllerHandler.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Camera\ViewTypes\Transition.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Camera\ViewTypes\ViewType.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Ability.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\AbilityAttributes.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\AI\NavMeshAgentMovement.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\AI\PathfindingMovement.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\DamageVisualization.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\DetectObjectAbilityBase.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Die.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Fall.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Generic.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\HeightChange.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Idle.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\IItemToggledReceiver.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Interact.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\ItemEquipVerifier.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\Aim.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\Drop.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\EquipNext.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\EquipPrevious.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\EquipScroll.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\EquipSwitcher.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\EquipUnequip.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\ItemAbility.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\ItemSetAbilityBase.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\Reload.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\ToggleEquip.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Items\Use.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Jump.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\MoveTowards.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\PickupItem.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\QuickTurn.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Ragdoll.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\RestrictPosition.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\RestrictRotation.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Revive.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Ride.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Rideable.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\Slide.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\SpeedChange.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\StartMovement.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\StopMovement.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Abilities\StoredInputAbilityBase.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\AnimatorMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\CapsuleColliderPositioner.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\CharacterFootEffects.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\CharacterIK.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\CharacterIKBase.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\CharacterLocomotion.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\ChildAnimatorMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Effects\BossStomp.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Effects\Earthquake.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Effects\Effect.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Effects\PlayAudioClip.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\FootstepTrigger.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\Identifiers\CharacterColliderBaseIdentifier.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\ILookSource.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\ItemHandler.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\LocalLookSource.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\MovementType.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\UltimateCharacterLocomotion.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Character\UltimateCharacterLocomotionHandler.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Events\EventHandler.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Events\InvokableAction.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Events\StateEvent.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Events\UnityEvents.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Game\DeterministicObjectManager.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Game\IDeterministicObject.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Game\ObjectPool.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Game\Scheduler.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Game\SpawnPoint.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Game\SpawnPointManager.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\ActiveInputEvent.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\InputBase.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\PlayerInput.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\StandaloneInput.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\UnityInput.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\VirtualControls\VirtualAxis.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\VirtualControls\VirtualButton.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\VirtualControls\VirtualControl.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\VirtualControls\VirtualControlsManager.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\VirtualControls\VirtualJoystick.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\VirtualControls\VirtualTouchpad.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Input\VirtualInput.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Inventory\Inventory.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Inventory\InventoryBase.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Inventory\ItemCollection.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Inventory\ItemSet.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Inventory\ItemSetManager.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Inventory\ItemType.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Inventory\ItemTypeAmount.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\Actions\GrenadeItem.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\Actions\IGrenadeItemPerspectiveProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\Actions\IReloadableItem.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\Actions\IShootableWeaponPerspectiveProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\Actions\ItemAction.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\Actions\IThrowableItemPerspectiveProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\Actions\IUsableItem.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\Actions\ShootableWeapon.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\Actions\ThrowableItem.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\Actions\UsableItem.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\AnimatorAudioOutput\AnimatorAudioStateSelector.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\AnimatorAudioOutput\AnimatorAudioStateSet.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\AnimatorAudioOutput\Random.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\AnimatorAudioOutput\Sequence.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\Item.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\ItemPerspectiveProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\ItemPlacement.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\ItemSlot.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Items\PerspectiveItem.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Motion\AnimatorMotion.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Motion\SmoothRandom.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Motion\Spring.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\CharacterAssist\AbilityIKTarget.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\CharacterAssist\AbilityStartLocation.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\CharacterAssist\AnimatedInteractable.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\CharacterAssist\HealthPickup.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\CharacterAssist\ItemPickup.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\CharacterAssist\ObjectActivator.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\CharacterAssist\ObjectIdentifier.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\CharacterAssist\ObjectPickup.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\Destructible.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\Explosion.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\Grenade.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\IForceObject.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\ItemAssist\Shell.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\ItemAssist\Smoke.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\ItemAssist\Tracer.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\MovingPlatform.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\MuzzleFlash.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\Projectile.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Objects\TrajectoryObject.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\StateSystem\AOTLinker.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\StateSystem\IStateOwner.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\StateSystem\PersistablePreset.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\StateSystem\Preset.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\StateSystem\State.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\StateSystem\StateBehavior.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\StateSystem\StateConfiguration.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\StateSystem\StateInspectorHelper.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\StateSystem\StateManager.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\StateSystem\StateObject.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\StateSystem\StateTrigger.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\SurfaceSystem\DecalManager.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\SurfaceSystem\SurfaceEffect.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\SurfaceSystem\SurfaceIdentifier.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\SurfaceSystem\SurfaceImpact.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\SurfaceSystem\SurfaceManager.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\SurfaceSystem\SurfaceStructs.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\SurfaceSystem\SurfaceType.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\AnimatorUpdate.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\AttributeManager.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\CharacterHealth.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\CharacterRespawner.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\DirectionalConstantForce.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\Health.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\Hitbox.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\IInteractableMessage.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\IInteractableTarget.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\Interactable.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\ParticlePooler.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\Remover.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\Respawner.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Traits\RigidbodyImpulse.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\UI\AttributeMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\UI\CharacterMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\UI\CrosshairsMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\UI\DamageIndicatorMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\UI\FullScreenItemUIMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\UI\HealthFlashMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\UI\ItemMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\UI\MessageMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\UI\PersistentItemMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\UI\SlotItemMonitor.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\AssetInfo.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\Builders\AbilityBuilder.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\Builders\CharacterBuilder.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\Builders\ItemBuilder.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\Builders\ViewTypeBuilder.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\GameObjectExtensions.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\LayerManager.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\MathUtility.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\Serialization.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\TimeUtility.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\TransformExtensions.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\Scripts\Utility\UnityEngineUtility.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\ThirdPersonController\Scripts\Items\ThirdPersonGrenadeItemProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\ThirdPersonController\Scripts\Items\ThirdPersonItemProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\ThirdPersonController\Scripts\Items\ThirdPersonPerspectiveItem.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\ThirdPersonController\Scripts\Items\ThirdPersonShootableWeaponProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\ThirdPersonController\Scripts\Items\ThirdPersonThrowableItemProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\ThirdPersonController\Scripts\Items\ThirdPersonWeaponProperties.cs" />
+    <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\ThirdPersonController\Scripts\StateSystem\AOTLinker.cs" />
+    <None Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Shaders\InvisibleShadowCaster.shader" />
+    <None Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Shaders\TerrainSurface.shader" />
+    <None Include="Assets\Shaders\NewSurfaceShader.shader" />
+    <None Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Shaders\3DText.shader" />
+    <None Include="Assets\Tools\Opsive\UltimateCharacterController\Shaders\Overlay.shader" />
+    <None Include="Assets\Tools\Opsive\UltimateCharacterController\Demo\Shaders\Emissive.shader" />
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>C:/Users/audras.clement/Desktop/3GD_Discover/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids">
+      <HintPath>C:/Users/audras.clement/Desktop/3GD_Discover/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>C:/Users/audras.clement/Desktop/3GD_Discover/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>C:/Users/audras.clement/Desktop/3GD_Discover/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/audras.clement/Desktop/3GD_Discover/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/audras.clement/Desktop/3GD_Discover/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/Users/audras.clement/Desktop/3GD_Discover/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/audras.clement/Desktop/3GD_Discover/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/audras.clement/Desktop/3GD_Discover/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudWebServicesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FacebookModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/audras.clement/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderCore">
+      <HintPath>C:/Users/audras.clement/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderMeshOps">
+      <HintPath>C:/Users/audras.clement/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll</HintPath>
+    </Reference>
+    <Reference Include="KdTreeLib">
+      <HintPath>C:/Users/audras.clement/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="pb_Stl">
+      <HintPath>C:/Users/audras.clement/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="Poly2Tri">
+      <HintPath>C:/Users/audras.clement/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/audras.clement/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
