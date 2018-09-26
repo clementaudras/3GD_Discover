@@ -20,14 +20,16 @@ namespace Opsive.UltimateCharacterController.Character.Abilities
 
     public class Grapple : Ability
     {
-        public float distToHookMax = 1;
+        public float m_distToHookMax = 1;
+        public float m_forceAfterGrapple = 1.0f;
         public Transform m_targetTr;
         public Transform m_playerTr;
-        public GameObject hookHelper;
+        public GameObject m_hookHelper;
 
         public float m_speed = 20.0f;
 
         public GrappleCalculation m_grappleCalculation;
+
         /// <summary>
         /// Initialize the default values.
         /// </summary>
@@ -35,14 +37,13 @@ namespace Opsive.UltimateCharacterController.Character.Abilities
         {
             base.Awake();
             m_playerTr = m_GameObject.GetCachedComponent<Transform>();
-
         }
 
 
 
         protected override void AbilityStarted()
         {
-            Debug.Log("Grapple");
+            //Debug.Log("Grapple");
             ShootGrapple();
 
             base.AbilityStarted();
@@ -51,6 +52,7 @@ namespace Opsive.UltimateCharacterController.Character.Abilities
         public override void UpdatePosition()
         {
             //m_playerTr.position = Vector3.MoveTowards(m_playerTr.position, _targetTr.transform.position, Time.deltaTime * _speed);
+
             ShootGrapple();
 
         }
@@ -61,17 +63,18 @@ namespace Opsive.UltimateCharacterController.Character.Abilities
             m_playerTr.position = Vector3.MoveTowards(m_playerTr.position, m_targetTr.transform.position, Time.deltaTime * m_speed);
             float distanceToHook = Vector3.Distance(m_playerTr.position, m_targetTr.transform.position);
 
-            if (distanceToHook < distToHookMax)
+            if (distanceToHook < m_distToHookMax)
             {
                 if (m_grappleCalculation.GetComponent<GrappleCalculation>().grounded == false)
                 {
                     //AddForce(new Vector3(0.0f, 1.0f, 1.0f));
                     //AddForce(Vector3.forward *2f);
-                    AddForce(Vector3.up*2f);
+                    AddForce(Vector3.up * m_forceAfterGrapple);
                     //m_playerTr.Translate(Vector3.forward * Time.deltaTime * 15f);
                     //m_playerTr.Translate(Vector3.up * Time.deltaTime * 20f);
                 }
-                m_grappleCalculation.GetComponent<GrappleCalculation>().StartCoroutine("Climb");
+                //m_grappleCalculation.GetComponent<GrappleCalculation>().StartCoroutine("Climb");
+                m_grappleCalculation.GetComponent<GrappleCalculation>().ReturnHook();
             }
         }
     }

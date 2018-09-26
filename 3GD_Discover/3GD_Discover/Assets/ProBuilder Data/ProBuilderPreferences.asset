@@ -14,22 +14,20 @@ MonoBehaviour:
   m_Bool_keys: []
   m_Int_keys:
   - pbHandleAlignment
+  - pbDefaultEditLevel
   - pbDefaultSelectionMode
   - pb_GIWorkflowMode
-  - pbDefaultEditLevel
   m_Float_keys:
   - pbEditorScroll.x
   - pbEditorScroll.y
-  - pbBevelAmount
   m_String_keys: []
   m_Color_keys: []
   m_Material_keys: []
   m_Bool_values: 
-  m_Int_values: 00000000020000000100000000000000
+  m_Int_values: 00000000000000000200000001000000
   m_Float_values:
   - 0
-  - 271.79993
-  - 0.7395665
+  - 120
   m_String_values: []
   m_Color_values: []
   m_Material_values: []
