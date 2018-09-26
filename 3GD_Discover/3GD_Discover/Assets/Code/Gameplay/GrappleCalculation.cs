@@ -6,6 +6,10 @@ using Opsive.UltimateCharacterController.Character;
 
 public class GrappleCalculation : MonoBehaviour {
 
+    //public ObjectWeight m_objWeightScript;
+
+    public GameObject m_obiRopeRenderer;
+
     public float distToHookMax = 1;
     public GameObject hook;
     public GameObject hookHolder;
@@ -45,11 +49,13 @@ public class GrappleCalculation : MonoBehaviour {
             hook.transform.position = hookHelper.transform.position;
             hook.transform.parent = null;
             grapplingLr.GetComponent<LineRenderer>().enabled = true;
+            m_obiRopeRenderer.SetActive(true);
         }
         else
         {
             hook.transform.parent = hookHolder.transform;
             grapplingLr.GetComponent<LineRenderer>().enabled = false;
+            m_obiRopeRenderer.SetActive(false);
         }
 
 
@@ -130,7 +136,7 @@ public class GrappleCalculation : MonoBehaviour {
             if (hit.transform.tag == "Hookable")
             {
                 hooked = true;
-                Debug.Log("Grappling hooked to " + hit.transform.name);
+                //Debug.Log("Grappling hooked to " + hit.transform.name);
                 hookedObj = hit.transform.gameObject;
             }
             else
