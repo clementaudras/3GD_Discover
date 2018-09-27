@@ -76,7 +76,7 @@ public class GrappleGrab : MonoBehaviour {
         // Declare a raycast hit to store information about what our raycast has hit
         RaycastHit hit;
 
-        Debug.DrawRay(rayOrigin, fpsCam.transform.forward * 100.0f, Color.magenta);
+        Debug.DrawRay(rayOrigin, fpsCam.transform.forward * 100.0f, Color.yellow);
 
         if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, hookRange))
         {
@@ -102,7 +102,7 @@ public class GrappleGrab : MonoBehaviour {
         // Declare a raycast hit to store information about what our raycast has hit
         RaycastHit hit;
 
-        Debug.DrawRay(rayOrigin, fpsCam.transform.forward * 100.0f, Color.magenta);
+        Debug.DrawRay(rayOrigin, fpsCam.transform.forward * 100.0f, Color.yellow);
 
         if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, hookRange))
         {
