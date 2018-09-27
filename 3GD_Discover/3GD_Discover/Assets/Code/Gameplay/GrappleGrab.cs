@@ -14,9 +14,12 @@ public class GrappleGrab : MonoBehaviour {
     public GameObject m_grabbededObj;
     public Transform m_playerTr;
     public bool _grabbed;
-    
-    private float m_objTravelSpeed = 10.0f;
-    private float m_distanceToPlayerMax = 1.0f;
+    public GameObject hook;
+    public GameObject grapplingLr;
+    public GameObject hookHolder;
+
+    private float m_objTravelSpeed;
+    public float m_distanceToPlayerMax = 2.5f;
 
 
     // Use this for initialization
@@ -28,7 +31,17 @@ public class GrappleGrab : MonoBehaviour {
 	void Update () {
         if (_grabbed)
         {
+            hook.transform.position = m_grabbededObj.transform.position;
+            hook.transform.parent = m_grabbededObj.transform;
+            m_grabbededObj.GetComponent<Rigidbody>().useGravity = false;
             AttractObject();
+            grapplingLr.GetComponent<LineRenderer>().enabled = true;
+        }
+        else {
+            hook.transform.parent = hookHolder.transform;
+            grapplingLr.GetComponent<LineRenderer>().enabled = false;
+            grapplingLr.GetComponent<LineRenderer>().enabled = false;
+            m_objTravelSpeed = 0.0f;
         }
 
 
@@ -47,6 +60,7 @@ public class GrappleGrab : MonoBehaviour {
         float m_distanceToPlayer = Vector3.Distance(m_grabbededObj.transform.position, m_playerTr.transform.position);
         if (m_distanceToPlayer < m_distanceToPlayerMax)
         {
+            m_grabbededObj.GetComponent<Rigidbody>().useGravity = true;
             _grabbed = false;
         }
     }
@@ -99,7 +113,14 @@ public class GrappleGrab : MonoBehaviour {
             //If the object is light
             if (hit.transform.GetComponent<ObjectWeight>().m_light)
             {
+                m_grabbededObj = hit.transform.gameObject;
+                m_objTravelSpeed = 15.0f;
+                _grabbed = true;
                 //Debug.Log("Light Object");
+            }
+            else
+            {
+                hookHelper.transform.position += fpsCam.transform.forward * hookRange;
             }
 
             //If the object is medium
@@ -118,8 +139,14 @@ public class GrappleGrab : MonoBehaviour {
             //If the object is heavy
             if (hit.transform.GetComponent<ObjectWeight>().m_heavy)
             {
+                m_grabbededObj = hit.transform.gameObject;
+                m_objTravelSpeed = 1.0f;
                 _grabbed = true;
                 //Debug.Log("Heavy Object");
+            }
+            else
+            {
+                hookHelper.transform.position += fpsCam.transform.forward * hookRange;
             }
         }
         else

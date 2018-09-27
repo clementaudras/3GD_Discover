@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 3636d2408c55ec54d86a07f87412edaa
+timeCreated: 1531247047
+licenseType: Store
+PluginImporter:
+  serializedVersion: 1
+  iconMap: {}
+  executionOrder:
+    WrappingRopeLibrary.Scripts.RopeBase: 100
+  isPreloaded: 0
+  platformData:
+    Any:
+      enabled: 1
+      settings: {}
+    Editor:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+    WindowsStoreApps:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

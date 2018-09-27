@@ -69,7 +69,10 @@ namespace Opsive.UltimateCharacterController.Character.Abilities
                 {
                     //AddForce(new Vector3(0.0f, 1.0f, 1.0f));
                     //AddForce(Vector3.forward *2f);
-                    AddForce(Vector3.up * m_forceAfterGrapple);
+                    if(m_grappleCalculation.GetComponent<GrappleCalculation>().ceilling == false)
+                    {
+                        AddForce(Vector3.up * m_forceAfterGrapple);
+                    }
                     //m_playerTr.Translate(Vector3.forward * Time.deltaTime * 15f);
                     //m_playerTr.Translate(Vector3.up * Time.deltaTime * 20f);
                 }

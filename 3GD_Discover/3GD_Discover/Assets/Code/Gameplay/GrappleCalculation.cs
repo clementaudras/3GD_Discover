@@ -8,7 +8,7 @@ public class GrappleCalculation : MonoBehaviour {
 
     //public ObjectWeight m_objWeightScript;
 
-    public GameObject m_obiRopeRenderer;
+    //public GameObject m_obiRopeRenderer;
 
     public float distToHookMax = 1;
     public GameObject hook;
@@ -29,6 +29,8 @@ public class GrappleCalculation : MonoBehaviour {
     public float maxDistance;
     private float currentDistance;
     public bool grounded;
+    public bool ceilling;
+
     public Camera fpsCam;
 
     public UltimateCharacterLocomotion m_uclScript;
@@ -42,20 +44,20 @@ public class GrappleCalculation : MonoBehaviour {
     // Update is called once per frame
     void LateUpdate()
     {
-        
+        CheckIfCeilling();
 
         if (hookFired)
         {
             hook.transform.position = hookHelper.transform.position;
             hook.transform.parent = null;
             grapplingLr.GetComponent<LineRenderer>().enabled = true;
-            m_obiRopeRenderer.SetActive(true);
+            //m_obiRopeRenderer.SetActive(true);
         }
         else
         {
             hook.transform.parent = hookHolder.transform;
             grapplingLr.GetComponent<LineRenderer>().enabled = false;
-            m_obiRopeRenderer.SetActive(false);
+            //m_obiRopeRenderer.SetActive(false);
         }
 
 
@@ -177,6 +179,31 @@ public class GrappleCalculation : MonoBehaviour {
         else
         {
             grounded = false;
+        }
+    }
+
+    void CheckIfCeilling()
+    {
+        RaycastHit hit;
+        float distance = 1f;
+        Vector3 dir = new Vector3(0, 2.0f, 0);
+        Vector3 pos = new Vector3(transform.position.x, transform.position.y + 2.0f, transform.position.z);
+        Debug.DrawRay(pos, dir, Color.magenta);
+
+        if (Physics.Raycast(pos, dir, out hit, distance))
+        {
+            if (hit.transform.CompareTag("Hookable"))
+            {
+                ceilling = true;
+            }
+            else
+            {
+                ceilling = false;
+            }
+        }
+        else
+        {
+            ceilling = false;
         }
     }
 }
