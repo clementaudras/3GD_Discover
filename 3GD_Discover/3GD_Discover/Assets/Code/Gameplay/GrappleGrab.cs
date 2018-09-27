@@ -20,7 +20,8 @@ public class GrappleGrab : MonoBehaviour {
 
     private float m_objTravelSpeed;
     public float m_distanceToPlayerMax = 2.5f;
-
+    public Transform m_leftHand;
+    private bool _smallObjInHand;
 
     // Use this for initialization
     void Start () {
@@ -33,7 +34,7 @@ public class GrappleGrab : MonoBehaviour {
         {
             hook.transform.position = m_grabbededObj.transform.position;
             hook.transform.parent = m_grabbededObj.transform;
-            m_grabbededObj.GetComponent<Rigidbody>().useGravity = false;
+            m_grabbededObj.GetComponent<Rigidbody>().useGravity = true;
             AttractObject();
             grapplingLr.GetComponent<LineRenderer>().enabled = true;
         }
@@ -42,6 +43,8 @@ public class GrappleGrab : MonoBehaviour {
             grapplingLr.GetComponent<LineRenderer>().enabled = false;
             grapplingLr.GetComponent<LineRenderer>().enabled = false;
             m_objTravelSpeed = 0.0f;
+            m_distanceToPlayerMax = 2.5f;
+            
         }
 
 
@@ -116,6 +119,7 @@ public class GrappleGrab : MonoBehaviour {
                 m_grabbededObj = hit.transform.gameObject;
                 m_objTravelSpeed = 15.0f;
                 _grabbed = true;
+                _smallObjInHand = true;
                 //Debug.Log("Light Object");
             }
             else
@@ -142,6 +146,7 @@ public class GrappleGrab : MonoBehaviour {
                 m_grabbededObj = hit.transform.gameObject;
                 m_objTravelSpeed = 1.0f;
                 _grabbed = true;
+                m_distanceToPlayerMax = 5.0f;
                 //Debug.Log("Heavy Object");
             }
             else
@@ -153,5 +158,11 @@ public class GrappleGrab : MonoBehaviour {
         {
             return;
         }
+    }
+
+    void GrabSmallObjectInHand()
+    {
+        m_grabbededObj.transform.position = m_leftHand.transform.position;
+        m_grabbededObj.transform.parent = m_leftHand.transform;
     }
 }

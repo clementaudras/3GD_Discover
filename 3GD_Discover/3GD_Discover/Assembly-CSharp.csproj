@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\Gameplay\ForceJump.cs" />
+    <Compile Include="Assets\Code\Gameplay\Grab.cs" />
     <Compile Include="Assets\Code\Gameplay\GrappleCalculation.cs" />
     <Compile Include="Assets\Code\Gameplay\GrappleGrab.cs" />
     <Compile Include="Assets\Code\Gameplay\Grappling_Right.cs" />
@@ -414,26 +415,26 @@
     <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\ThirdPersonController\Scripts\Items\ThirdPersonThrowableItemProperties.cs" />
     <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\ThirdPersonController\Scripts\Items\ThirdPersonWeaponProperties.cs" />
     <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\ThirdPersonController\Scripts\StateSystem\AOTLinker.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Character\Scripts\CharacterRopeInteraction.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Character\Scripts\Man1Controller.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\AnchoreMouse.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\CutRopeManager.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\Emitter.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\GUIAnch.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\GUICharacter.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\GUIElastic.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\GUIPanel.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\MouseCamera.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\MovementManager.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\OutDestroyer.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\Roll.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\RopeEnd.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\RopeIgnoreLayerResetter.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\RotateCamera.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\Singleton.cs" />
-    <Compile Include="Assets\WrappingRope\Demo\Scripts\TargetCamera.cs" />
-    <Compile Include="Assets\WrappingRope\Scripts\DefaultRopeInteraction.cs" />
-    <Compile Include="Assets\WrappingRope\Scripts\Rope.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Character\Scripts\CharacterRopeInteraction.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Character\Scripts\Man1Controller.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\AnchoreMouse.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\CutRopeManager.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\Emitter.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\GUIAnch.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\GUICharacter.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\GUIElastic.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\GUIPanel.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\MouseCamera.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\MovementManager.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\OutDestroyer.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\Roll.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\RopeEnd.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\RopeIgnoreLayerResetter.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\RotateCamera.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\Singleton.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Demo\Scripts\TargetCamera.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Scripts\DefaultRopeInteraction.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Scripts\Rope.cs" />
     <None Include="Assets\Tools\AmplifyShaderEditor\Examples\Community\LowPolyWater\Credits.txt" />
     <None Include="Assets\Tools\AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\Sprites-Default.shader" />
     <None Include="Assets\Tools\AmplifyShaderEditor\Examples\Official\ScreenSpaceDetail\ScreenSpaceDetail.shader" />
@@ -976,7 +977,7 @@
       <HintPath>C:/Users/audras.clement/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="WrappingRope">
-      <HintPath>C:/Users/audras.clement/Documents/3gddiscover/3GD_Discover/3GD_Discover/Assets/WrappingRope/Plugins/WrappingRope.dll</HintPath>
+      <HintPath>C:/Users/audras.clement/Documents/3gddiscover/3GD_Discover/3GD_Discover/Assets/Tools/WrappingRope/Plugins/WrappingRope.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

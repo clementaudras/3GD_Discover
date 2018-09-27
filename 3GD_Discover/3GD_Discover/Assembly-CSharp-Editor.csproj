@@ -592,15 +592,15 @@
     <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Editor\Inspectors\Character\LeanInspectorDrawer.cs" />
     <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\FirstPersonController\Editor\Inspectors\Items\FirstPersonPerspectiveItemInspector.cs" />
     <Compile Include="Assets\Tools\Opsive\UltimateCharacterController\ThirdPersonController\Editor\Inspectors\Items\ThirdPersonPerspectiveItemInspector.cs" />
-    <Compile Include="Assets\WrappingRope\Editor\IPolygonView.cs" />
-    <Compile Include="Assets\WrappingRope\Editor\Model\Cross.cs" />
-    <Compile Include="Assets\WrappingRope\Editor\Model\Dot.cs" />
-    <Compile Include="Assets\WrappingRope\Editor\Model\Stroke.cs" />
-    <Compile Include="Assets\WrappingRope\Editor\Model\Symbol.cs" />
-    <Compile Include="Assets\WrappingRope\Editor\Plotter.cs" />
-    <Compile Include="Assets\WrappingRope\Editor\PolygonController.cs" />
-    <Compile Include="Assets\WrappingRope\Editor\PolygonWindow.cs" />
-    <Compile Include="Assets\WrappingRope\Editor\RopeEditor.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Editor\IPolygonView.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Editor\Model\Cross.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Editor\Model\Dot.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Editor\Model\Stroke.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Editor\Model\Symbol.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Editor\Plotter.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Editor\PolygonController.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Editor\PolygonWindow.cs" />
+    <Compile Include="Assets\Tools\WrappingRope\Editor\RopeEditor.cs" />
     <None Include="Assets\Tools\Obi\Editor\Resources\EditorParticle.shader" />
     <None Include="Assets\Tools\Obi\Editor\Resources\FlatSurfaceShader.shader" />
     <None Include="Assets\Tools\Obi\Editor\Resources\EditorLineShader.shader" />
@@ -926,7 +926,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="WrappingRope">
-      <HintPath>C:/Users/audras.clement/Documents/3gddiscover/3GD_Discover/3GD_Discover/Assets/WrappingRope/Plugins/WrappingRope.dll</HintPath>
+      <HintPath>C:/Users/audras.clement/Documents/3gddiscover/3GD_Discover/3GD_Discover/Assets/Tools/WrappingRope/Plugins/WrappingRope.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

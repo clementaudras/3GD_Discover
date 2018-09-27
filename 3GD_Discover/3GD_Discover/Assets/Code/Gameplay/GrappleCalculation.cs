@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Opsive.UltimateCharacterController.Character.Abilities;
 using Opsive.UltimateCharacterController.Character;
+using Opsive.UltimateCharacterController.FirstPersonController.Camera.ViewTypes;
 
 public class GrappleCalculation : MonoBehaviour {
 
