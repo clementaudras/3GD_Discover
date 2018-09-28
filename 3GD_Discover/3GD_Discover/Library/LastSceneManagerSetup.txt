@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Template_Discover_Prototype.unity
+- path: Assets/Scenes/Proof Of Concept/Template_Discover_PoC.unity
   isLoaded: 1
   isActive: 1
